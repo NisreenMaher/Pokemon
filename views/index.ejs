@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Pokemon</title>
+    <!-- CSS  -->
+    <link href="stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="light-blue lighten-1">
+        <nav class=" grey darken-4" role="navigation">
+            <div class="nav-wraypper container row">
+                <div class="col s3">
+                    <a id="logo-container" onClick="window.location.reload();" class="brand-logo white-text ">
+                        Pokédex</a>
+                </div>
+                <div class="col s2 m4  ">
+                    <button onclick="diaplayCapPokemonBtn()" class="indigo-text waves-effect waves-light btn-small transparent">
+                        display caputred pokemon
+                    </button>
+                </div>
+                <div class="col s7  m4  ">
+                    <form action="javascript:void(0)" class="row">
+                        <div class="input-field inline col s8">
+                            <input id="search" type="text" class="validate" placeholder="Search...">
+                        </div>
+                        <div class="input-field inline col s4">
+                            <button onclick="searchpokemonbutton()" id="searchbtn" class="waves-effect waves-light btn-small transparent" name="action">
+                                Search
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="modal1" class="modal">
+                <div class="modal-content" id="modal-content">
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+            <div class="section" style="
+            min-height: 82vh;">
+                <div id="poke-container" class=" row ">
+                    <div id="poke-search" class="center">
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+
+        <footer class="page-footer light-blue lighten-2 ">
+            <div class="footer-copyright ">
+                <div class="container ">
+                    Made by Nisreen :)
+                </div>
+            </div>
+        </footer>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
+        <script src="js/materialize.js "></script>
+        <script src="js/init.js "></script>
+        <script src="js/index.js"></script>
+
+</body>
+
+</html>
